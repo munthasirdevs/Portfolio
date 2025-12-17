@@ -53,9 +53,25 @@ body {
   position: absolute;
   content: "";
   display: block;
-  width: 512px;
+  width: 665px;
   top: 15px;
   left: 161px;
+  border-bottom: 1px solid var(--secondary-text-color);
+  padding-bottom: 4px;
+}
+
+.Skills_line {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.Skills_line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 320px;
+  top: 15px;
+  left: 121px;
   border-bottom: 1px solid var(--secondary-text-color);
   padding-bottom: 4px;
 }
