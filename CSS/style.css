@@ -43,3 +43,19 @@ body {
   background-color: #0f172a;
   box-shadow: 0 4px 6px -1px var(--primary-color);
 }
+
+.project_line {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.project_line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 512px;
+  top: 15px;
+  left: 161px;
+  border-bottom: 1px solid var(--secondary-text-color);
+  padding-bottom: 4px;
+}
