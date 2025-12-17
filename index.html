@@ -5,13 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Delius&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
-<body>
-    dekhi kaj kore naki
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./JS/script.js"></script>
-</body>
+
+</head>
+    <body class="text-gray-800">
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="navbar-transparent fixed w-full z-50 py-4 px-6 md:px-10">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">M</span>
+                    </div>
+                    <a href="#" class="text-white font-bold text-2xl">Munthasir</a>
+                </div>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-white hover:text-blue-300 active"><span class="secondary-text-color">#</span>Home</a>
+                    <a href="#works" class="nav-link text-white hover:text-blue-300"><span class="secondary-text-color">#</span>Works</a>
+                    <a href="#about" class="nav-link text-white hover:text-blue-300"><span class="secondary-text-color">#</span>About-ME</a>
+                    <a href="#contact" class="nav-link text-white hover:text-blue-300"><span class="secondary-text-color">#</span>Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-slate-900 p-6">
+                <div class="flex flex-col space-y-6">
+                    <a href="#home" class="nav-link text-white text-lg hover:text-blue-300">Home</a>
+                    <a href="#works" class="nav-link text-white text-lg hover:text-blue-300">Works</a>
+                    <a href="#about" class="nav-link text-white text-lg hover:text-blue-300">About</a>
+                    <a href="#contact" class="nav-link text-white text-lg hover:text-blue-300">Contact</a>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-700">
+                        <span class="text-gray-400">Theme:</span>
+                        <button id="mobile-theme-toggle" class="text-white">
+                            <i class="fas fa-moon"></i> Dark Mode
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="flex flex-row justify-center items-center p-16 pt-40">
+                <div class="basis-2/3 pb-10">
+                    <h1 class="text-4xl font-bold text-white pb-6">Munthasir is a <span class="secondary-text-color">full-stack web developer</span></h1>
+                    <p class="mt-4 text-lg text-gray-300 font-thin pb-4">He crafts responsive websites where technologies meet creativity</p>
+
+                    <div class="mt-6">
+                        <button class="px-4 py-2 border-2 secondary-bg-color text-white hover:bg-gray-700">Contact Me !!</button>
+                    </div>
+                </div>
+                <div class="basis-1/3">
+                    <img src="./Images/profile.png" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover">          <!----- ADD PHOTO ----->
+                </div>
+            </div>
+
+            <div>
+                <!----- ADD THE CAPTION ----->
+            </div>
+
+        </section>
+
+        
+
+        <script src="./JS/script.js"></script>
+    </body>
 </html>

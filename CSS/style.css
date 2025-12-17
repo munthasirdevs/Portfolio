@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #282c33;
+  --primary-text-color: #abb2bf;
+  --secondary-text-color: #c778dd;
+
+  --navbar-color: rgb(13 13 13 / 56%);
+}
+
+
+.primary-color {
+  color: var(--primary-color);
+}
+.primary-text-color {
+  color: var(--primary-text-color);
+}
+.secondary-text-color {
+  color: var(--secondary-text-color);
+}
+
+.primary-bg-color {
+  border-color: var(--primary-color);
+}
+
+.secondary-bg-color {
+  border-color: var(--secondary-text-color);
+}
+
+body {
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--primary-color);
+}
+
+/* Custom styles for enhanced transparency effect */
+.navbar-transparent {
+  background-color: var(--navbar-color);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-solid {
+  background-color: #0f172a;
+  box-shadow: 0 4px 6px -1px var(--primary-color);
+}
