@@ -75,3 +75,36 @@ body {
   border-bottom: 1px solid var(--secondary-text-color);
   padding-bottom: 4px;
 }
+
+.about_line {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.about_line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 480px;
+  top: 15px;
+  left: 169px;
+  border-bottom: 1px solid var(--secondary-text-color);
+  padding-bottom: 4px;
+}
+
+.contact_line {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.contact_line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 420px;
+  top: 15px;
+  left: 169px;
+  border-bottom: 1px solid var(--secondary-text-color);
+  padding-bottom: 4px;
+}
+
