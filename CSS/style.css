@@ -108,3 +108,7 @@ body {
   padding-bottom: 4px;
 }
 
+.social-icon:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
