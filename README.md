@@ -1,0 +1,2 @@
+Hello, I'm Munthasir Rahman.
+I’m a self-taught full-stack website developer based in Dhaka, Bangladesh, driven by a love for crafting digital experiences that look great and work flawlessly. I enjoy taking ideas from concept to completion, building responsive websites from scratch and polishing them into smooth, modern interfaces that feel natural and engaging.
