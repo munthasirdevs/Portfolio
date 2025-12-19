@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Document</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Delius&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merienda:wght@300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./CSS/responsive.css">
+</head>
+    <body class="text-gray-800">
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="navbar-transparent fixed w-full z-50 py-4 px-6 md:px-10">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="h-10 w-10 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">M</span>
+                    </div>
+                    <a href="#" class="text-white font-bold text-2xl">Munthasir</a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="nav-link text-white hover:text-blue-300 active"><span
+                            class="secondary-text-color">#</span>Home</a>
+                    <a href="./works.html" class="nav-link text-white hover:text-blue-300"><span
+                            class="secondary-text-color">#</span>Works</a>
+                    <a href="./about.html" class="nav-link text-white hover:text-blue-300"><span
+                            class="secondary-text-color">#</span>About-ME</a>
+                    <a href="./contact.html" class="nav-link text-white hover:text-blue-300"><span
+                            class="secondary-text-color">#</span>Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-slate-900 p-6">
+                <div class="flex flex-col space-y-6">
+                    <a href="./index.html" class="nav-link text-white text-lg hover:text-blue-300">Home</a>
+                    <a href="./works.html" class="nav-link text-white text-lg hover:text-blue-300">Works</a>
+                    <a href="./about.html" class="nav-link text-white text-lg hover:text-blue-300">About</a>
+                    <a href="./contact.html" class="nav-link text-white text-lg hover:text-blue-300">Contact</a>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-700">
+                        <span class="text-gray-400">Theme:</span>
+                        <button id="mobile-theme-toggle" class="text-white">
+                            <i class="fas fa-moon"></i> Dark Mode
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Title -->
+        <section id="home" class="container px-6 pb-12 pt-40 mx-auto">
+
+            <div>
+                <h3 class="text-3xl font-bold text-white mb-4"><span class="secondary-text-color">/</span>Projects</h3>
+                <p class="text-gray-300">I've worked on a range of projects, from simple landing pages to complex web applications.</p>
+            </div>
+
+        </section>
+
+        <!-- Big Projects Section -->
+        <section id="projects">
+            <div class="container mx-auto px-6 py-16">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl font-bold text-white"><span class="secondary-text-color">#</span>completed Projects</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project 1 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-white text-white"><img src="./Images/project1.png" alt="profile-01"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 2 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-white text-white"><img src="./Images/project1.png"
+                                        alt="profile-01"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 3 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-white text-white"><img src="./Images/project1.png"
+                                        alt="profile-01"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <!-- Project 4 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-white text-white"><img src="./Images/project1.png" alt="profile-01"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 5 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-white text-white"><img src="./Images/project1.png"
+                                        alt="profile-01"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Small Projects Section -->
+        <section id="projects">
+            <div class="container mx-auto px-6 py-16">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl font-bold text-white"><span class="secondary-text-color">#</span>Small Projects</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project 1 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 2 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 3 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 4 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 5 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Project 6 -->
+                    <table class="border border-white p-6 shadow-lg table-auto">
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-thin">project code language
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-white">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Project 1</h3>
+                                        <p class="mt-2 text-gray-300 font-thin text-sm pb-6">project description</p>
+                                        <a href="#"
+                                            class="px-3 py-1 border-2 secondary-bg-color text-white hover:bg-gray-700">Live
+                                            ~~></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer-section" class="border-t border-gray-200 mt-16">
+            <div class="container justify-between items-center flex flex-col px-6 py-16 md:flex-row gap-10">
+                <div class="basis-1 pb-10 md:basis-2/4">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center">
+                        <div class="flex flex-row items-center basis-1 md:basis-1/2">
+                            <img src="./Images/logo.png" alt="logo" class="rounded-full w-12 h-12 object-cover mr-4">
+                            <h2 class="text-3xl font-bold text-white">Munthasir Rahman</h2>
+                        </div>
+                        <div class="basis-1 md:basis-1/2">
+                            <p class="secondary-text-color"><a href="mailto:developer@munthasir.com" class="hover:carsur-pointer">developer@munthasir.com</a></p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-lg text-gray-300 pb-4">Web designer and front-end developer. Turning ideas into modern, responsive web experiences.</p>
+                </div>
+                <div class="basis-1 md:basis-1/4">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300">
+                                    <p>Social Media Links</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-white text-gray-300 font-bold">
+                                    <div class="flex flex-row justify-center items-center gap-4">
+
+                                        <a href="https://facebook.com/munthasir.devs/" target="_blank">
+                                            <i class="fa-brands fa-facebook text-2xl social-icon hover:text-blue-500"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/munthasir.devs/" target="_blank">
+                                            <i class="fa-brands fa-instagram text-2xl social-icon hover:text-pink-500"></i>
+                                        </a>
+                                        <a href="https://wa.me/qr/N73MVMTMYMHMF1" target="_blank">
+                                            <i class="fa-brands fa-whatsapp text-2xl social-icon hover:text-green-500"></i>
+                                        </a>
+                                        <a href="https://github.com/munthasirdevs" target="_blank">
+                                            <i class="fa-brands fa-github text-2xl social-icon hover:text-white"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/munthasir-rahman-b58624399/" target="_blank">
+                                            <i class="fa-brands fa-linkedin text-2xl social-icon hover:text-blue-500"></i>
+                                        </a>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- copyright -->
+        <footer id="#footer" class="text-center py-4 bg-gray-900 text-gray-400">
+            &copy; 2026 Munthasir. All rights reserved.
+        </footer>
+
+        <!-- Scripts -->
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
